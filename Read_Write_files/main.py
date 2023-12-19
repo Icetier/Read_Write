@@ -18,7 +18,7 @@ with open('2.txt', 'r', encoding='utf-8') as file_2:
 with open('3.txt', 'a', encoding='utf-8') as file_3:
     with open('2.txt', 'r', encoding='utf-8') as file_2:
         with open('1.txt', 'r', encoding='utf-8') as file_1:
-            if int(sum_lines_1) > int(sum_lines_2):
+            if int(sum_lines_1) >= int(sum_lines_2):
                 file_3.write(f'2.txt\n{sum_lines_2}\n')
                 line = 0
                 file_3.write(f'2.txt\n{sum_lines_2}\n\n')
